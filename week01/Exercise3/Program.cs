@@ -44,7 +44,7 @@ class Program
             }
 
             // Display total guesses
-            Console.WriteLine("You guessed the number in {guessCount} attempts.");
+            Console.WriteLine($"You guessed the number in {guessCount} attempts.");
 
             // Ask if the user wants to play again
             Console.Write("Do you want to play again? (yes/no): ");
