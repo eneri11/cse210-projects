@@ -33,7 +33,7 @@ class Program
             letter = "F";
         }
 
-        int lastDigit = grade % 10;
+        int lastDigit = percent % 10;
 
         if (lastDigit >= 7)
         {
