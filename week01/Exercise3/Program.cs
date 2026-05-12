@@ -18,6 +18,8 @@ class Program
 
             int guess = -1;
             int guessCount = 0;
+
+            Console.WriteLine("Welcome to the Guessing Game!");
         
             while (guess != magicNumber)
             {
