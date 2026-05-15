@@ -8,6 +8,6 @@ class Program
         Entry anEntry = new Entry();
         anEntry.Display();
 
-        Console.WriteLine("Hello World! This is the Journal Project.");
+        Console.WriteLine("Journal Program");
     }
 }
