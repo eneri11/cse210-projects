@@ -6,11 +6,9 @@ class Program
     static void Main(string[] args)
     {
         // =========================================================
-        // EXCEEDING REQUIREMENTS
         // This program uses a library of scriptures instead of
         // only one scripture.
-        //
-        // A random scripture is selected each time the program runs.
+        // A random scripture was selected each time the program runs.
         // =========================================================
 
         List<Scripture> scriptures = new List<Scripture>()
@@ -26,8 +24,8 @@ class Program
             ),
 
             new Scripture(
-                new Reference("Psalm", 23, 1),
-                "The Lord is my shepherd I shall not want."
+                new Reference("Moroni", 10, 32),
+                "Yea, come unto Christ, and be perfected in him, and deny yourselves of all ungodliness; and if ye shall deny yourselves of all ungodliness, and love God with all your might, mind and strength, then is his grace sufficient for you, that by his grace ye may be perfect in Christ; and if by the grace of God ye are perfect in Christ, ye can in nowise deny the power of God."
             )
         };
 

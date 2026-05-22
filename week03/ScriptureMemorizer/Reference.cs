@@ -39,7 +39,6 @@ public class Reference
     // =========================================================
     // Returns formatted scripture reference text
     // =========================================================
-
     public string GetDisplayText()
     {
         if (_verse == _endVerse)
