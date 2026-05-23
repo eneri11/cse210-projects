@@ -8,9 +8,6 @@ public class Word
     private string _text;
     private bool _isHidden;
 
-    // =========================================================
-    // Constructor
-    // =========================================================
 
     public Word(string text)
     {

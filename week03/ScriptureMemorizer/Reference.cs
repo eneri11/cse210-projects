@@ -11,7 +11,7 @@ public class Reference
     private int _endVerse;
 
     // =========================================================
-    // Constructor for a single verse
+    // Single verse constructor
     // Example: John 3:16
     // =========================================================
 
@@ -24,7 +24,7 @@ public class Reference
     }
 
     // =========================================================
-    // Constructor for multiple verses
+    // Multiple verses constructor
     // Example: Proverbs 3:5-6
     // =========================================================
 
