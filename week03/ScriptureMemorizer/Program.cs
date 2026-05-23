@@ -34,12 +34,12 @@ class Program
         // Randomly select a scripture
         Scripture scripture = scriptures[random.Next(scriptures.Count)];
 
-        // Continue until all words are hidden
+        
         while (!scripture.IsCompletelyHidden())
         {
             Console.Clear();
 
-            // Display scripture
+            // Scripture Display
             Console.WriteLine(scripture.GetDisplayText());
 
             Console.WriteLine();
@@ -47,13 +47,13 @@ class Program
 
             string input = Console.ReadLine();
 
-            // Quit option
+            
             if (input.ToLower() == "quit")
             {
                 break;
             }
 
-            // Hide random words
+            
             scripture.HideRandomWords(3);
         }
 
