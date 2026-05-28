@@ -12,13 +12,13 @@ class Program
 
         // ------------- VIDEO 1 ---------------
         Video video1 = new Video("C# Basics Tutorial", "CodeAcademy", 600);
-        video1.AddComment(new Comment("Anna", "Very helpful!"));
+        video1.AddComment(new Comment("Jean", "Very helpful!"));
         video1.AddComment(new Comment("John", "I finally understand classes."));
-        video1.AddComment(new Comment("Mark", "Great explanation."));
+        video1.AddComment(new Comment("Mark", "Awesome explanation."));
 
         // ------------- VIDEO 2 ---------------
         Video video2 = new Video("OOP Explained Simply", "TechWorld", 750);
-        video2.AddComment(new Comment("Liam", "This made it clear."));
+        video2.AddComment(new Comment("Gary", "This made it clear."));
         video2.AddComment(new Comment("Sophia", "Abtraction is now easy."));
         video2.AddComment(new Comment("Noah", "Nice examples!"));
 
