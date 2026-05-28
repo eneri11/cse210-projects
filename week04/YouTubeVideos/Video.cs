@@ -5,6 +5,11 @@ using System.Transactions;
 
 public class Video
 {
+     private string _title;
+    private string _author;
+    private int _lengthSeconds;
+    
+
     public string Title { get; set; }
     public string Author { get; set;}
     public int LengthSeconds { get; set;}
@@ -12,6 +17,7 @@ public class Video
     private List<Comment> _comments = new List<Comment>();
 
     public Video(string title, string author, int lengthSeconds)
+    
     {
         Title = title;
         Author = author;
