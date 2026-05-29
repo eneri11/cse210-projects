@@ -5,10 +5,6 @@ using System.Transactions;
 
 public class Video
 {
-     private string _title;
-    private string _author;
-    private int _lengthSeconds;
-    
 
     public string Title { get; set; }
     public string Author { get; set;}

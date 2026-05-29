@@ -19,7 +19,7 @@ class Program
         // ------------- VIDEO 2 ---------------
         Video video2 = new Video("OOP Explained Simply", "TechWorld", 750);
         video2.AddComment(new Comment("Gary", "This made it clear."));
-        video2.AddComment(new Comment("Sophia", "Abtraction is now easy."));
+        video2.AddComment(new Comment("Sophia", "Abstraction is now easy."));
         video2.AddComment(new Comment("Noah", "Nice examples!"));
 
         // ------------- VIDEO 3 ---------------
