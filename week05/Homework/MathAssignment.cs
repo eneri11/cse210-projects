@@ -11,7 +11,7 @@ public class MathAssignment : Assignment
         : base(studentName, topic)
     {
         _textbookSection = textbookSection;
-        _problems = problems
+        _problems = problems;
     }  
 
     public string GetHomeworkList()
