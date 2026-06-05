@@ -22,7 +22,7 @@ public class BreathingActivity : Activity
             ShowCountDown(4);
 
             Console.WriteLine();
-            Console.Write("Breath out... ")
+            Console.Write("Breath out... ");
             ShowCountDown(6);
         }
 
