@@ -10,7 +10,7 @@ public class ReflectionActivity : Activity
     public ReflectionActivity()
         : base (     
             "Reflection", 
-            "This activity will help your reflect on times in your life when you have shown strenght and resilience.")
+            "This activity will help your reflect on times in your life when you have shown strength and resilience.")
     {
         _prompts = new List<string>()
         {
