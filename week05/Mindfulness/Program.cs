@@ -1,10 +1,9 @@
 using System;
 
 // Creativity:
-// 1. Reflection prompts do not repeat until all prompts have been used.
-// 2. Reflection questions do not repeat until all questions have been used.
-// 3. Listing prompts do not repeat until all prompts have been used.
-// 4. Activity completion counter is displayed when the user exits.
+// 1. Reflection prompts and questions do not repeat until all prompts have been used.
+// 2. Listing prompts do not repeat until all prompts have been used.
+// 3. Activity completion counter is displayed when the user exits.
 
 class Program
 {
