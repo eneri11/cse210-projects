@@ -9,7 +9,7 @@ class Program
         while (choice != 4)
     
         {
-          //  Console.Clear();
+            Console.Clear();
 
             Console.WriteLine("Menu Options:");
             Console.WriteLine("  1. Start Breathing Activity");
