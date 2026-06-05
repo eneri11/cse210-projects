@@ -21,7 +21,7 @@ public class Activity
         Console.WriteLine(_description);
         Console.WriteLine();
 
-        Console.Write("How long, in seconds, would you like for your session? ")
+        Console.Write("How long, in seconds, would you like for your session? ");
         _duration = int.Parse(Console.ReadLine());
 
         Console.WriteLine();
