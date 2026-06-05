@@ -16,12 +16,15 @@ public class Activity
     public void DisplayStartingMessage()
     {
         Console.Clear();
-        Console.WriteLine($"Welcome to the {_name} Activity");
+
+        Console.WriteLine($"Welcome to the {_name} Activity.");
         Console.WriteLine();
+
         Console.WriteLine(_description);
         Console.WriteLine();
 
-        Console.Write("How long, in seconds, would you like for your session? ");
+        Console.Write("How long, in seconds, would you like your session to be? ");
+
         _duration = int.Parse(Console.ReadLine());
 
         Console.WriteLine();
@@ -36,13 +39,15 @@ public class Activity
         ShowSpinner(3);
 
         Console.WriteLine();
-        Console.WriteLine($"You have completed {_duration} seconds of the {_name} Activity.");
+        Console.WriteLine(
+            $"You have completed {_duration} seconds of the {_name} Activity.");
+
         ShowSpinner(3);
     }
 
     public void ShowSpinner(int seconds)
     {
-        string[] spinner = {"|", "/", "-", "\\" };
+        string[] spinner = { "|", "/", "-", "\\" };
 
         DateTime endTime = DateTime.Now.AddSeconds(seconds);
 
@@ -51,10 +56,13 @@ public class Activity
         while (DateTime.Now < endTime)
         {
             Console.Write(spinner[i]);
+
             Thread.Sleep(250);
+
             Console.Write("\b \b");
 
             i++;
+
             if (i >= spinner.Length)
             {
                 i = 0;
@@ -67,7 +75,9 @@ public class Activity
         for (int i = seconds; i > 0; i--)
         {
             Console.Write(i);
+
             Thread.Sleep(1000);
+
             Console.Write("\b \b");
         }
 

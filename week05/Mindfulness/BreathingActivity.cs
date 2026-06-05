@@ -1,4 +1,4 @@
-using System; 
+using System;
 
 public class BreathingActivity : Activity
 {
@@ -22,7 +22,7 @@ public class BreathingActivity : Activity
             ShowCountDown(4);
 
             Console.WriteLine();
-            Console.Write("Breath out... ");
+            Console.Write("Breathe out... ");
             ShowCountDown(6);
         }
 

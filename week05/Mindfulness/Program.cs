@@ -1,43 +1,63 @@
 using System;
 
+// Creativity:
+// 1. Reflection prompts do not repeat until all prompts have been used.
+// 2. Reflection questions do not repeat until all questions have been used.
+// 3. Listing prompts do not repeat until all prompts have been used.
+// 4. Activity completion counter is displayed when the user exits.
+
 class Program
 {
     static void Main(string[] args)
     {
+        int completedActivities = 0;
         int choice = 0;
 
         while (choice != 4)
-    
         {
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch
+            {
+                // Ignore Console.Clear errors
+            }
 
             Console.WriteLine("Menu Options:");
             Console.WriteLine("  1. Start Breathing Activity");
             Console.WriteLine("  2. Start Reflection Activity");
             Console.WriteLine("  3. Start Listing Activity");
             Console.WriteLine("  4. Quit");
+
             Console.Write("Select a choice from the menu: ");
 
-            choice = int.Parse(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out choice))
+            {
+                choice = 0;
+            }
 
             switch (choice)
             {
                 case 1:
-                    BreathingActivity breathing = new BreathingActivity();
-                    breathing.Run();
+                    new BreathingActivity().Run();
+                    completedActivities++;
                     break;
 
                 case 2:
-                    ReflectionActivity reflection = new ReflectionActivity();
-                    reflection.Run();
+                    new ReflectionActivity().Run();
+                    completedActivities++;
                     break;
 
                 case 3:
-                    ListingActivity listing = new ListingActivity();
-                    listing.Run();
+                    new ListingActivity().Run();
+                    completedActivities++;
                     break;
 
                 case 4:
+                    Console.WriteLine();
+                    Console.WriteLine(
+                        $"You completed {completedActivities} mindfulness activities this session.");
                     Console.WriteLine("Goodbye!");
                     break;
 
